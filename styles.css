@@ -1,0 +1,102 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000;
+    color: #00FF00;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #00FF00;
+    position: relative;
+    text-align: center;
+}
+h1 {
+    color: #00FF00;
+}
+#passwordInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #000;
+    color: #00FF00;
+    border: 1px solid #00FF00;
+}
+#checkButton {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #000;
+    color: #00FF00;
+    border: 1px solid #00FF00;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+#checkButton:hover {
+    background-color: #00FF00;
+    color: #000;
+}
+#result {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #00FF00;
+}
+.safe {
+    background-color: #003300;
+    color: #00FF00;
+}
+.unsafe {
+    background-color: #330000;
+    color: #FF0000;
+}
+#tips {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid #00FF00;
+    border-radius: 5px;
+}
+#languageButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #000;
+    color: #00FF00;
+    border: 1px solid #00FF00;
+    border-radius: 20px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+#languageButton::before {
+    content: 'PT';
+}
+#languageButton.active::before {
+    content: 'EN';
+}
+#languageButton.active {
+    background-color: #00FF00;
+    color: #000;
+}
+#languageButton:hover {
+    box-shadow: 0 0 5px #00FF00;
+}
+#breachesList {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #00FF00;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #00FF00;
+    text-align: left;
+    max-height: 150px;
+    overflow-y: auto;
+}

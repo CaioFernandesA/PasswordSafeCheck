@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Safety Checker</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o arquivo CSS -->
+</head>
+<body>
+    <div class="container">
+        <button id="languageButton"></button>
+        <h1 id="title">Password Safety Checker</h1>
+        <input type="password" id="passwordInput" placeholder="Enter your password">
+        <button id="checkButton">Check Password</button>
+        <div id="result"></div>
+        <div id="breachesList"></div>
+        <div id="tips">
+            <h3 id="tipsTitle">Tips for a Strong Password:</h3>
+            <ul id="tipsList">
+                <li>Use at least 12 characters</li>
+                <li>Include uppercase and lowercase letters</li>
+                <li>Use numbers and special characters</li>
+                <li>Avoid common words or phrases</li>
+                <li>Don't use personal information</li>
+                <li>Use a unique password for each account</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script> <!-- Biblioteca CryptoJS -->
+    <script src="script.js"></script> <!-- Link para o arquivo JavaScript -->
+</body>
+</html>
